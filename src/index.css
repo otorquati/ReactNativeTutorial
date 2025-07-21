@@ -48,6 +48,63 @@ main {
   align-items: center;
   overflow-y: auto;
 }
+ul {
+ width: 100%;
+  list-style: none;
+  padding: 0. 0.25rem 0.25rem;
+}
+
+ul li::before {
+  content: '\200B';
+}
+
+.items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+}
+
+.items:first-child{
+  margin: 0;
+}
+
+.items input[type='checkbox'] {
+  text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width: 48px;
+  height: 2.5rem;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.items input[type='checkbox']:focus + label{
+  text-decoration: underline;
+}
+.items > label {
+  font-size: 0.75rem;
+  flex-grow: 1;
+}
+
+.items svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+}
+
+.items svg:focus, 
+.items svg:hover{
+  color: red;
+  outline: none;
+}
 
 footer {
   width: 100%;
