@@ -1,4 +1,4 @@
-const Header = ({title = 'Defaul List'}) => {
+const Header = ({title = 'Default List'}) => {
   return (
     <header>
       <h1>{title}</h1>
